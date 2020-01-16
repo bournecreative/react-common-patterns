@@ -9,6 +9,7 @@ class Counter extends React.Component {
             <div className="m-2">
                 <span className={this.setBadgeClasses()}>{this.formatCount()}</span>
                 <button className="btn btn-secondary btn-small m-2" onClick={() => this.props.onIncrement(this.props.counter)}>+</button>
+                <button className="btn btn-secondary btn-small m-2" onClick={() => this.props.onDecrement(this.props.counter)}>-</button>
                 <button className="btn btn-danger btn-small" onClick={() => this.props.onDelete(this.props.counter)}>Delete</button>
             </div>
         )
